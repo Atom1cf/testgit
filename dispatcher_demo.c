@@ -6,6 +6,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+int square(int number)
+{
+    return number * number;
+}
+
 typedef enum {
     DISPATCH_OK = 0,
     DISPATCH_UNKNOWN,
