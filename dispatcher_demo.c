@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-int square(int number) "Dien tich hinh vuong"
+int square(int number)
 {
-    return number * number; "do dai * do dai"
+    return number * number;
 }
 
 typedef enum {
