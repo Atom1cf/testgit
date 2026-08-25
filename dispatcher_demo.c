@@ -24,7 +24,7 @@ typedef struct {
     int calls;
     int last_value;
 } counter_context;
-
+ 
 static dispatch_status set_handler(const char *argument, void *context)
 {
     counter_context *counter = context;
@@ -44,7 +44,11 @@ static dispatch_status set_handler(const char *argument, void *context)
     counter->last_value = (int)value;
     return DISPATCH_OK;
 }
-
+typedef struct {
+    const char *name;
+    command_fn callback;
+    void *context;
+} command_entry;
 static dispatch_status dispatch(const command_entry *entries,
                                 size_t count,
                                 const char *name,
@@ -65,7 +69,11 @@ static dispatch_status dispatch(const command_entry *entries,
     }
     return DISPATCH_UNKNOWN;
 }
-
+typedef struct {
+    const char *name;
+    command_fn callback;
+    void *context;
+} command_entry;
 static int compare_int(const void *left, const void *right)
 {
     const int a = *(const int *)left;
