@@ -8,11 +8,15 @@
 
 int square(int number)
 {
+<<<<<<< HEAD
     return number * number;
+=======
+    return number * number * number;
+>>>>>>> origin/dev
 }
 
 typedef enum {
-    DISPATCH_OK = 0,
+    DISPATCH_OK = 1,
     DISPATCH_UNKNOWN,
     DISPATCH_BAD_ARGUMENT
 } dispatch_status;
