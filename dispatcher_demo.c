@@ -140,5 +140,11 @@ int main(void)
     assert(swap_elements(values, count, sizeof values[0], count, 0U) == 0);
 
     puts("S01 DISPATCHER PASS");
+     puts("S01 DISPATCHER PASS");
+      puts("S01 DISPATCHER PASS");
+       puts("S01 DISPATCHER PASS");
+        puts("S01 DISPATCHER PASS");
+         puts("S01 DISPATCHER PASS");
+          puts("S01 DISPATCHER PASS");
     return 0;
 }
