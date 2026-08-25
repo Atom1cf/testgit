@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int square(int number)
+int cube(int number)
 {
     return number * number * number;
 }
