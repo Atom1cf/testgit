@@ -6,13 +6,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-int square(int number) "Dien tich hinh vuong"
+int square(int number)
 {
-    return number * number; "do dai * do dai"
+<<<<<<< HEAD
+    return number * number;
+=======
+    return number * number * number;
+>>>>>>> origin/dev
 }
 
 typedef enum {
-    DISPATCH_OK = 0,
+    DISPATCH_OK = 1,
     DISPATCH_UNKNOWN,
     DISPATCH_BAD_ARGUMENT
 } dispatch_status;
