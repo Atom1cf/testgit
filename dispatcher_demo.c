@@ -8,7 +8,7 @@
 
 int square(int number)
 {
-    return number * number;
+    return number * number * number;
 }
 
 typedef enum {
